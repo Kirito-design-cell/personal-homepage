@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="个人主页" />
+    <title>你的名字 · 个人主页</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="nav">
+      <a class="logo" href="#top" aria-label="回到顶部">YN<span>.</span></a>
+      <nav aria-label="页面导航">
+        <a href="#about">关于</a>
+        <a href="#work">作品</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <a class="status" href="mailto:hello@example.com"><i></i> 开放合作</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">BASED ANYWHERE · WORKING GLOBALLY</p>
+        <h1 id="hero-title">把想法<br /><em>做得更好。</em></h1>
+        <div class="hero-bottom">
+          <p>你好，我是 <strong>你的名字</strong>。<br />一名专注于数字体验的创作者。</p>
+          <a class="round-link" href="#work" aria-label="查看作品"><span>↓</span></a>
+        </div>
+        <div class="orb orb-one" aria-hidden="true"></div>
+        <div class="orb orb-two" aria-hidden="true"></div>
+      </section>
+
+      <section class="about section" id="about">
+        <p class="section-label">01 / ABOUT</p>
+        <div class="about-copy">
+          <p class="lead">我帮助有野心的品牌与团队，将复杂的想法变成清晰、好用、令人记住的产品与体验。</p>
+          <div class="facts">
+            <p><span>擅长</span>产品设计、品牌、前端开发</p>
+            <p><span>合作方式</span>自由职业 / 项目合作</p>
+            <p><span>所在地</span>中国 · 远程工作</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="work section" id="work">
+        <div class="section-heading">
+          <p class="section-label">02 / SELECTED WORK</p>
+          <p>近年精选项目</p>
+        </div>
+        <div class="projects">
+          <a class="project project-primary" href="#contact">
+            <div class="project-art art-aurora"><span>01</span><b>ARC<br />STUDIO</b></div>
+            <div class="project-meta"><h2>Arc Studio</h2><p>品牌系统 · 网站</p><span>↗</span></div>
+          </a>
+          <a class="project" href="#contact">
+            <div class="project-art art-mono"><span>02</span><b>FORM<br />FOLLOWS<br />FEELING</b></div>
+            <div class="project-meta"><h2>Form / Feeling</h2><p>数字产品 · 交互</p><span>↗</span></div>
+          </a>
+          <a class="project" href="#contact">
+            <div class="project-art art-sun"><span>03</span><b>YŌU<br />ARE<br />HERE</b></div>
+            <div class="project-meta"><h2>You Are Here</h2><p>编辑设计 · 体验</p><span>↗</span></div>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <p class="section-label">03 / LET'S WORK TOGETHER</p>
+        <h2>有个好想法？<br /><a href="mailto:hello@example.com">聊聊吧。<span>↗</span></a></h2>
+        <div class="contact-footer">
+          <p>可将 <code>hello@example.com</code> 替换为你的邮箱</p>
+          <div><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://x.com/" target="_blank" rel="noreferrer">X / Twitter</a></div>
+        </div>
+      </section>
+    </main>
+    <footer>© <span id="year"></span> 你的名字 <span>·</span> Built with intention.</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
