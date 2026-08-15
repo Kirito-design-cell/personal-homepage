@@ -2,3 +2,5 @@ node_modules/
 .wrangler/
 dist/
 wrangler.jsonc
+.gh-login.log
+.gh-login.log.err
