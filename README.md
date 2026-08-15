@@ -1,21 +1,18 @@
-# 个人主页
+# 可乐的个人主页
 
-这是一个无需构建步骤的静态网站。上线前请在 `index.html` 中替换：
+这是一个无需构建步骤的静态网站，托管在 Cloudflare Pages，并通过 GitHub 自动部署。
 
-- `你的名字`、`YN` 和首页介绍文字
-- `hello@example.com`
-- GitHub、LinkedIn、X / Twitter 链接
-- 三个项目的名称、描述和链接
+- 线上地址：https://personal-homepage-e0n.pages.dev
+- GitHub 仓库：https://github.com/Kirito-design-cell/personal-homepage
 
-## 部署到 Cloudflare Pages
+## 如何更新
 
-在本目录执行：
+修改本目录中的 `index.html`、`styles.css`、`script.js`，然后提交推送：
 
 ```powershell
-npx wrangler login
-npx wrangler pages deploy . --project-name=你的项目名
+git add .
+git commit -m "更新内容说明"
+git push
 ```
 
-首次部署会创建 Pages 项目；成功后访问 `https://你的项目名.pages.dev`。
-
-也可以将本文件夹拖入 Cloudflare Dashboard 的 Workers & Pages → Create application → Drag and drop your files。
+Cloudflare 会自动重新构建并发布，约 1 分钟后生效。
